@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blush & Bloom | Luxury Beauty</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+<header class="navbar">
+    <div class="logo">Blush & Bloom</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#makeup">Makeup</a></li>
+            <li><a href="#skincare">Skincare</a></li>
+            <li><a href="#bestsellers">Shop</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+<div class="nav-actions">
+    <button class="nav-icon-btn" type="button"
+            aria-label="View wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+        </svg>
+        <span class="nav-wishlist-count" id="nav-wishlist-count">0</span>
+    </button>
+
+    <button class="nav-icon-btn" type="button"
+            aria-label="View shopping bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 8h14l1 13H4L5 8Z"/>
+            <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+        </svg>
+        <span class="nav-cart-count" id="nav-cart-count">0</span>
+    </button>
+</div>
+
+</header>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero romantic-hero">
+            <div class="hero-content">
+                <span class="hero-tag">A LITTLE SELF-LOVE, EVERY DAY ♡</span>
+
+                <h1>
+                    A little pink,<br />
+                    <em>a little magic.</em>
+                </h1>
+
+                <p>
+                    Beauty that feels like you.
+                    Discover your new everyday essentials
+                    for a naturally radiant glow.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#bestsellers" class="hero-btn">
+                        SHOP BESTSELLERS ↗
+                    </a>
+                    <a href="#skincare" class="hero-link">
+                        Explore skincare
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero-blush-bloom.png" alt="Beautiful makeup and beauty products" />
+
+                <div class="hero-image-note">
+                    <span>♡</span>
+                    <div>
+                        <strong>Your glow era</strong>
+                        <p>Starts right here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- COLLECTIONS -->
+        <section class="collections">
+
+            <div class="section-label">DISCOVER YOUR RITUAL</div>
+
+            <h2>Made for your glow</h2>
+
+            <div class="collection-grid">
+
+                <div class="collection-card" id="makeup">
+                    <h3>Makeup Essentials</h3>
+                    <a href="#bestsellers">Explore makeup ↗</a>
+                </div>
+
+                <div class="collection-card" id="skincare">
+                    <h3>Skincare Rituals</h3>
+                    <a href="#bestsellers">Explore skincare ↗</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BESTSELLERS -->
+        <section class="bestsellers" id="bestsellers">
+
+            <p class="section-label">THE BLUSH & BLOOM EDIT</p>
+
+            <h2>Our Bestsellers</h2>
+
+            <p class="section-description">
+                Your little luxuries, loved every day.
+            </p>
+
+
+            <!-- SEARCH BAR AND FILTERS -->
+            <div class="product-controls">
+
+                <input type="search" id="product-search" placeholder="Search your beauty favourites..."
+                    aria-label="Search products">
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="makeup">
+                        Makeup
+                    </button>
+
+                    <button class="filter-btn" data-filter="skincare">
+                        Skincare
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1: LIPSTICK -->
+                <article class="product-card" data-category="makeup">
+                    <button class="wishlist-btn" aria-label="Add Rose Nude Lipstick to wishlist" aria-pressed="false">
+                        ♡
+                    </button>
+                    <img src="images/rose-nude-lipstick.jpg" alt="Rose Nude Lipstick" loading="lazy"
+                        alt="Rose Nude Lipstick">
+
+
+                 <h3>Rose Nude Lipstick</h3>
+
+<p class="selected-shade">Rose Nude</p>
+
+<p class="price">₹599</p>
+
+<div class="lipstick-shades" aria-label="Choose lipstick shade">
+    <button class="shade-circle" type="button"
+        style="--shade-color: #B87880;"
+        aria-label="Rose Nude"
+        data-shade="Rose Nude"
+       data-image="images/rose-nude-lipstick.jpg"
+        title="Rose Nude">
+    </button>
+
+    <button class="shade-circle" type="button"
+        style="--shade-color: #9C435D;"
+        aria-label="Berry Kiss"
+        data-shade="Berry Kiss"
+        data-image="images/berry-kiss-lipstick.jpg"
+        title="Berry Kiss">
+    </button>
+
+    <button class="shade-circle" type="button"
+        style="--shade-color: #D99079;"
+        aria-label="Peach Blush"
+        data-shade="Peach Blush"
+        data-image="images/peach-blush-lipstick.jpg"
+        title="Peach Blush">
+    </button>
+
+    <button class="shade-circle" type="button"
+        style="--shade-color: #87594D;"
+        aria-label="Mocha Muse"
+        data-shade="Mocha Muse"
+        data-image="images/mocha-muse-lipstick.jpg"
+        title="Mocha Muse">
+    </button>
+</div>
+
+
+                    <button class="add-btn" data-name="Rose Nude Lipstick" data-price="599">
+                        ADD TO BAG
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 2: BLUSH -->
+                <article class="product-card" data-category="makeup">
+                    <button class="wishlist-btn" aria-label="Add Petal Cream Blush to wishlist" aria-pressed="false">
+                        ♡
+                    </button>
+
+                    
+<img src="images/petal-creame-blush.jpg"
+     alt="Cream Blush"
+     loading="lazy">
+
+<h3>Cream Blush</h3>
+
+<p class="selected-shade">Petal Cream</p>
+
+<div class="lipstick-shades" aria-label="Choose blush shade">
+
+    <button class="shade-circle selected"
+        type="button"
+        style="--shade-color: #E8A5AD;"
+        data-shade="Petal Cream"
+        aria-label="Petal Cream"
+        aria-pressed="true"></button>
+
+    <button class="shade-circle"
+        type="button"
+        style="--shade-color: #C96F78;"
+        data-shade="Rosy Bloom"
+        data-image="images/rosy-bloom-blush.jpg"
+        aria-label="Rosy Bloom"
+        aria-pressed="false"></button>
+
+    <button class="shade-circle"
+        type="button"
+        style="--shade-color: #D98768;"
+        data-shade="Peach Flush"
+        data-image="images/peach-flush-blush.jpg"
+        aria-label="Peach Flush"
+        aria-pressed="false"></button>
+
+</div>
+
+<p class="price">₹399</p>
+
+<button class="add-btn"
+    data-name="Cream Blush"
+    data-price="399">
+    ADD TO BAG
+</button>
+
+</article>
+
+
+                <!-- PRODUCT 3: SERUM -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Glow Boost Serum to wishlist" aria-pressed="false">
+                        ♡
+                    </button>
+                    <img src="images/glow-serum.jpg" alt="Glow Boost Serum" loading="lazy" alt="Glow Boost Serum">
+
+                    <p class="product-category">SKINCARE</p>
+
+                    <h3>Glow Boost Serum</h3>
+
+                    <p class="price">₹899</p>
+
+                    <button class="add-btn" data-name="Glow Boost Serum" data-price="899">
+                        ADD TO BAG
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 4: MOISTURIZER -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Dew Drop Moisturizer to wishlist" aria-pressed="false">
+                        ♡
+                    </button>
+
+                    <img src="images/dew-drop-mosturizer.jpg" alt="Dew Drop Mosturizer" loading="lazy"
+                        alt="Dew Drop Mosturizer">
+
+                    <p class="product-category">SKINCARE</p>
+
+                    <h3>Dew Drop Moisturizer</h3>
+
+                    <p class="price">₹699</p>
+
+                    <button class="add-btn" data-name="Dew Drop Moisturizer" data-price="699">
+                        ADD TO BAG
+                    </button>
+
+                </article>
+
+               
+<!-- PRODUCT 5: GLOW LIP GLOSS -->
+<article class="product-card" data-category="makeup">
+
+    <button class="wishlist-btn"
+        aria-label="Add Glow Lip Gloss to wishlist"
+        aria-pressed="false">♡</button>
+ <img src="images/rosy-glowy-lip-gloss.jpg"
+         alt="Glow Lip Gloss"
+         loading="lazy">
+
+    <h3>Glow Lip Gloss</h3>
+
+    <p class="selected-shade">Rosy Glow</p>
+
+    <div class="lipstick-shades" aria-label="Choose lip gloss shade">
+
+        <button class="shade-circle selected"
+            type="button"
+            style="--shade-color: #C87991;"
+            data-shade="Rosy Glow"
+            data-image="images/rosy-glowy-lip-gloss.jpg"
+            aria-label="Rosy Glow"
+            aria-pressed="true"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #E7A080;"
+            data-shade="Peach Shine"
+            data-image="images/peach-shine-gloss.jpg"
+            aria-label="Peach Shine"
+            aria-pressed="false"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #A94D70;"
+            data-shade="Berry Kiss"
+            data-image="images/berry-kiss-gloss.jpg"
+            aria-label="Berry Kiss"
+            aria-pressed="false"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #986858;"
+            data-shade="Mocha Glaze"
+            data-image="images/mocha-glaze-gloss.jpg"
+            aria-label="Mocha Glaze"
+            aria-pressed="false"></button>
+
+    </div>
+
+    <p class="price">₹499</p>
+
+    <button class="add-btn"
+        data-name="Glow Lip Gloss"
+        data-price="499">ADD TO BAG</button>
+
+</article>
+
+                
+
+<!-- PRODUCT 6: MASCARA -->
+<article class="product-card" data-category="makeup">
+
+    <button class="wishlist-btn"
+        aria-label="Add Lash Bloom Mascara to wishlist"
+        aria-pressed="false">♡</button>
+
+    <img src="images/lash-bloom-mascara.jpg"
+         alt="Lash Bloom Mascara"
+         loading="lazy">
+
+    <h3>Lash Bloom Mascara</h3>
+
+    <p class="selected-shade">Jet Black</p>
+
+    <div class="lipstick-shades" aria-label="Choose mascara shade">
+
+        <button class="shade-circle selected"
+            type="button"
+            style="--shade-color: #252329;"
+            data-shade="Jet Black"
+            data-image="images/lash-bloom-mascara.jpg"
+            aria-label="Jet Black"
+            aria-pressed="true"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #795548;"
+            data-shade="Soft Brown"
+            data-image="images/soft-brown-mascara.jpg"
+            aria-label="Soft Brown"
+            aria-pressed="false"></button>
+
+    </div>
+
+    <p class="price">₹449</p>
+
+    <button class="add-btn"
+        data-name="Lash Bloom Mascara"
+        data-price="449">ADD TO BAG</button>
+
+</article>
+
+
+                <!-- PRODUCT 7: HIGHLIGHTER -->
+                <article class="product-card" data-category="makeup">
+                    <button class="wishlist-btn" aria-label="Add Champagne Glow Highlighter to wishlist"
+                        aria-pressed="false">♡</button>
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+                        alt="Champagne Glow Highlighter" loading="lazy">
+                    <h3>Champagne Glow Highlighter</h3>
+                    <p class="price">₹799</p>
+                    <button class="add-btn" data-name="Champagne Glow Highlighter" data-price="799">ADD TO BAG</button>
+                </article>
+
+               
+<!-- PRODUCT 7: LIP TINT -->
+<article class="product-card" data-category="makeup">
+
+    <button class="wishlist-btn"
+        aria-label="Add Lip Tint to wishlist"
+        aria-pressed="false">♡</button>
+
+    <img src="images/lip-tint.jpg"
+         alt="Lip Tint"
+         loading="lazy">
+
+    <h3>Lip Tint</h3>
+
+    <p class="selected-shade">Bene Lip Tint</p>
+
+    <div class="lipstick-shades" aria-label="Choose lip tint shade">
+
+        <button class="shade-circle selected"
+            type="button"
+            style="--shade-color: #C94F69;"
+            data-shade="Bene Lip Tint"
+            data-image="images/lip-tint.jpg"
+            aria-label="Bene Lip Tint"
+            aria-pressed="true"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #DF806F;"
+            data-shade="Peach Pop"
+             data-image="images/peach-pop-tint.jpg"
+            aria-label="Peach Pop"
+            aria-pressed="false"></button>
+
+        <button class="shade-circle"
+            type="button"
+            style="--shade-color: #9E354F;"
+            data-shade="Cherry Crush"
+              data-image="images/cherry-crush-tint.jpg"
+            aria-label="Cherry Crush"
+            aria-pressed="false"></button>
+
+    </div>
+
+    <p class="price">₹349</p>
+
+    <button class="add-btn"
+        data-name="Lip Tint"
+        data-price="349">ADD TO BAG</button>
+
+</article>
+
+
+                <!-- PRODUCT 9: EYESHADOW -->
+                <article class="product-card" data-category="makeup">
+                    <button class="wishlist-btn" aria-label="Add Rose Petal Eyeshadow Palette to wishlist"
+                        aria-pressed="false">♡</button>
+                    <img src="images/eyeshadow.jpg" alt="Rose Petal Eyeshadow Palette" loading="lazy">
+                    <h3>Rose Petal Eyeshadow Palette</h3>
+                    <p class="price">₹999</p>
+                    <button class="add-btn" data-name="Rose Petal Eyeshadow Palette" data-price="999">ADD TO
+                        BAG</button>
+                </article>
+
+                <!-- PRODUCT 10: FACE CLEANSER -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Cloud Soft Face Cleanser to wishlist"
+                        aria-pressed="false">♡</button>
+                    <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80"
+                        alt="Cloud Soft Face Cleanser" loading="lazy">
+                    <h3>Cloud Soft Face Cleanser</h3>
+                    <p class="price">₹449</p>
+                    <button class="add-btn" data-name="Cloud Soft Face Cleanser" data-price="449">ADD TO BAG</button>
+                </article>
+
+                <!-- PRODUCT 11: FACE SERUM -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Vitamin C Glow Serum to wishlist"
+                        aria-pressed="false">♡</button>
+                        <img src="images/vitamin-c-serum.jpg" alt="Vitamin C Glow Serum" loading="lazy">
+                    <h3>Vitamin C Glow Serum</h3>
+                    <p class="price">₹899</p>
+                    <button class="add-btn" data-name="Vitamin C Glow Serum" data-price="899">ADD TO BAG</button>
+                </article>
+
+                <!-- PRODUCT 12: SUNSCREEN -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Daily Dew Sunscreen to wishlist"
+                        aria-pressed="false">♡</button>
+                        <img src="images/sunscreen.jpg" alt="Daily Dew Sunscreen" loading="lazy">
+                    <h3>Daily Dew Sunscreen</h3>
+                    <p class="price">₹599</p>
+                    <button class="add-btn" data-name="Daily Dew Sunscreen" data-price="599">ADD TO BAG</button>
+                </article>
+
+                <!-- PRODUCT 13: NIGHT CREAM -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Midnight Repair Night Cream to wishlist"
+                        aria-pressed="false">♡</button>
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80"
+                        alt="Midnight Repair Night Cream" loading="lazy">
+                    <h3>Midnight Repair Night Cream</h3>
+                    <p class="price">₹749</p>
+                    <button class="add-btn" data-name="Midnight Repair Night Cream" data-price="749">ADD TO BAG</button>
+                </article>
+
+                <!-- PRODUCT 14: LIP MASK -->
+                <article class="product-card" data-category="skincare">
+                    <button class="wishlist-btn" aria-label="Add Sweet Dreams Lip Mask to wishlist"
+                        aria-pressed="false">♡</button>
+                          <img src="images/lip-mask.jpg" alt="Sweet Dreams Lip Mask" loading="lazy">
+                    <h3>Sweet Dreams Lip Mask</h3>
+                    <p class="price">₹349</p>
+                    <button class="add-btn" data-name="Sweet Dreams Lip Mask" data-price="349">ADD TO BAG</button>
+                </article>
+            </div>
+        </section>
+        <!-- ===== CHECKOUT SECTION ===== -->
+        <section class="checkout-section" id="checkout-section">
+            <p class="section-label">ALMOST YOURS</p>
+            <h2>Complete your order</h2>
+            <p class="section-description">
+                A little beauty is on its way to you.
+            </p>
+
+            <div class="checkout-layout">
+                <form id="checkout-form">
+                    <h3>Delivery details</h3>
+
+                    <label for="customer-name">Full name</label>
+                    <input type="text" id="customer-name" name="customerName" placeholder="Enter your full name"
+                        required>
+
+                    <label for="customer-email">Email address</label>
+                    <input type="email" id="customer-email" name="customerEmail" placeholder="you@example.com" required>
+
+                    <label for="customer-phone">Phone number</label>
+                    <input type="tel" id="customer-phone" name="customerPhone" placeholder="10-digit mobile number"
+                        pattern="[6-9][0-9]{9}" maxlength="10" required>
+
+                    <label for="customer-address">Delivery address</label>
+                    <textarea id="customer-address" name="customerAddress" placeholder="House number, street, area"
+                        rows="3" required></textarea>
+
+                    <label for="customer-city">City</label>
+                    <input type="text" id="customer-city" name="customerCity" placeholder="Enter your city" required>
+
+                    <label for="customer-pincode">PIN code</label>
+                    <input type="text" id="customer-pincode" name="customerPincode" placeholder="6-digit PIN code"
+                        pattern="[0-9]{6}" maxlength="6" required>
+
+                    <button type="submit" class="add-btn">
+                        PLACE DEMO ORDER →
+                    </button>
+                </form>
+
+                <div class="checkout-summary">
+                    <h3>Your order</h3>
+                    <div id="checkout-items">
+                        Your shopping bag is empty.
+                    </div>
+                    <div class="checkout-total">
+                        Total: ₹<span id="checkout-total">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="order-message" role="status" aria-live="polite"></div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <!-- BLUSH & BLOOM LUXURY FOOTER -->
+    <footer id="footer" class="luxury-footer">
+
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Blush <span>&</span> Bloom <span class="footer-flower">✿</span></h2>
+                <p>Beauty that blooms with you.</p>
+                <p class="footer-note">
+                    A little pink, a little magic, a lot of self-love. ♡
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#bestsellers">Bestsellers</a>
+                <a href="#skincare">Skincare</a>
+              <a href="#cart-section" id="footer-shopping-bag">Shopping Bag</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>We're Here</h3>
+                <a href="mailto:hello@blushandbloom.example">Contact Us</a>
+                <a href="#checkout-section">Delivery Details</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Stay Pretty ♡</h3>
+                <p>Follow our little world of beauty.</p>
+
+
+                <div class="social-icons">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                        </svg>
+                    </a>
+
+                    <!-- X -->
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.4L5.4 22H2.2l7.3-8.4L1.8 2h6.4l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"
+                                fill="currentColor" stroke="none" />
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z" />
+                            <path
+                                d="M8.5 7.7c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.4-.9.7-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.3 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.7-.5l-2.1-1c-.3-.1-.5-.2-.7.2l-.9 1.1c-.2.2-.3.3-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6Z"
+                                fill="currentColor" stroke="none" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Blush & Bloom. All rights reserved. ♡</p>
+            <p>Made with love and a little blush. 🎀</p>
+        </div>
+
+    </footer>
+<!-- BLUSH & BLOOM SIDE PANELS -->
+
+<div class="panel-overlay" id="panel-overlay"></div>
+
+<aside class="side-panel" id="wishlist-panel"
+       aria-label="Your wishlist" aria-hidden="true">
+    <div class="panel-header">
+        <div>
+            <span class="panel-eyebrow">YOUR LITTLE WISH LIST ♡</span>
+            <h2>Saved with love</h2>
+        </div>
+        <button class="panel-close" type="button"
+                data-close-panel aria-label="Close wishlist">×</button>
+    </div>
+
+    <div class="panel-items" id="wishlist-panel-items"></div>
+</aside>
+
+<aside class="side-panel" id="bag-panel"
+       aria-label="Your shopping bag" aria-hidden="true">
+    <div class="panel-header">
+        <div>
+            <span class="panel-eyebrow">A LITTLE TREAT FOR YOU ♡</span>
+            <h2>Your shopping bag</h2>
+        </div>
+        <button class="panel-close" type="button"
+                data-close-panel aria-label="Close shopping bag">×</button>
+    </div>
+
+    <div class="panel-items" id="bag-panel-items"></div>
+
+    <div class="panel-footer">
+        <div class="panel-total">
+            <span>Subtotal</span>
+            <strong>₹<span id="panel-bag-total">0</span></strong>
+        </div>
+        <button class="panel-checkout" id="panel-checkout"
+                type="button">CONTINUE TO CHECKOUT →</button>
+    </div>
+</aside>
+
+  <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
